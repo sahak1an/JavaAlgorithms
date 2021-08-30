@@ -26,4 +26,8 @@ public class WordIsOnlyDigit {
                 .chars()
                 .allMatch(value -> Character.isDigit((char) value));
     }
+
+    private static boolean wordContainsOnlyDigits3(String word){
+        return word.matches("[0-9]+");
+    }
 }
